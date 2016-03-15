@@ -28,8 +28,8 @@ import seda.sandStorm.api.*;
 import seda.sandStorm.api.internal.*;
 import seda.sandStorm.core.*;
 import seda.sandStorm.main.*;
-import seda.sandStorm.lib.aSocket.*;
-import seda.sandStorm.lib.aDisk.*;
+//import seda.sandStorm.lib.aSocket.*;
+//import seda.sandStorm.lib.aDisk.*;
 import java.io.*;
 import java.util.*;
 
@@ -178,7 +178,7 @@ public class sandStormMgr implements ManagerIF, SystemManagerIF, sandStormConst 
 			profiler.start();
 		}
 
-		if (mgrconfig.getBoolean("global.aSocket.enable")) {
+		/*if (mgrconfig.getBoolean("global.aSocket.enable")) {
 			System.err.println("Sandstorm: Starting aSocket layer");
 			aSocketMgr.initialize(this, this);
 		}
@@ -186,7 +186,7 @@ public class sandStormMgr implements ManagerIF, SystemManagerIF, sandStormConst 
 		if (mgrconfig.getBoolean("global.aDisk.enable")) {
 			System.err.println("Sandstorm: Starting aDisk layer");
 			AFileMgr.initialize(this, this);
-		}
+		}*/
 	}
 
 	// Load stages as specified in the SandstormConfig.
